@@ -1,5 +1,7 @@
 ﻿using NamespB = Modul006Demo_NamespaceSample.NamespaceB;
 using NamespA = Modul006Demo_NamespaceSample.NamespaceA;
+//https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/using-directive
+
 namespace Modul006Demo_NamespaceSample
 {
     internal class Program

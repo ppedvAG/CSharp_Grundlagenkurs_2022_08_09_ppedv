@@ -1,0 +1,8 @@
+Artikel:
+https://devblogs.microsoft.com/
+
+(Daniel Roth > Chef von ASP.NET Core)
+https://devblogs.microsoft.com/dotnet/author/danroth27/
+
+https://code-maze.com/archives/
+

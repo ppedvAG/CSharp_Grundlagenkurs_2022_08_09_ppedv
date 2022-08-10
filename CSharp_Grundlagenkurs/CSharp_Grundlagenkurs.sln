@@ -29,6 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiederholungTag1", "Wiederh
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80F9A31A-2C88-4C4F-9A72-65A4C782BF50}"
 	ProjectSection(SolutionItems) = preProject
+		Internet_Links.txt = Internet_Links.txt
 		WunschListe.txt = WunschListe.txt
 	EndProjectSection
 EndProject
