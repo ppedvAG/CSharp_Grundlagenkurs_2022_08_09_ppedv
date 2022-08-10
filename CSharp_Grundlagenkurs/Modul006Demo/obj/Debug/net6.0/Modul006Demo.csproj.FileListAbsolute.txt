@@ -1,0 +1,15 @@
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\bin\Debug\net6.0\Modul006Demo.exe
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\bin\Debug\net6.0\Modul006Demo.deps.json
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\bin\Debug\net6.0\Modul006Demo.runtimeconfig.json
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\bin\Debug\net6.0\Modul006Demo.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\bin\Debug\net6.0\Modul006Demo.pdb
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.csproj.AssemblyReference.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.AssemblyInfo.cs
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\refint\Modul006Demo.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.pdb
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\Modul006Demo.genruntimeconfig.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\Modul006Demo\obj\Debug\net6.0\ref\Modul006Demo.dll

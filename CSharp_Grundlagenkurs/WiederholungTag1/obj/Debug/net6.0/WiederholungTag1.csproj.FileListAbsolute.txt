@@ -1,0 +1,15 @@
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\bin\Debug\net6.0\WiederholungTag1.exe
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\bin\Debug\net6.0\WiederholungTag1.deps.json
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\bin\Debug\net6.0\WiederholungTag1.runtimeconfig.json
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\bin\Debug\net6.0\WiederholungTag1.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\bin\Debug\net6.0\WiederholungTag1.pdb
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.csproj.AssemblyReference.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.AssemblyInfo.cs
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\refint\WiederholungTag1.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.pdb
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\WiederholungTag1.genruntimeconfig.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\WiederholungTag1\obj\Debug\net6.0\ref\WiederholungTag1.dll
