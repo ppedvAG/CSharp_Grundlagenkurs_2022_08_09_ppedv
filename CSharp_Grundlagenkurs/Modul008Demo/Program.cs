@@ -44,6 +44,7 @@
     public class Lebewesen
     {
         #region Properties
+
         //Alles Auto-Properties -> Variablen werden beim kompilieren intern hinzugefügt
         public DateTime Geburtsdatum { get; set; }
         public string Name { get; set; }
@@ -54,7 +55,7 @@
 
         //Neue Version 3.0 
         public UmweltTyp Umwelt { get; }
-        public Gender Gender { get; set; }
+        public virtual Gender Gender { get; set; }
 
         public int AlterInJahren
         {
@@ -246,6 +247,18 @@
         public override void Kommunizieren()
         {
             Console.WriteLine("Mensch kommuniziert über Sprache");
+        }
+
+        public override Gender Gender 
+        { 
+            get => base.Gender; 
+            set
+            {
+                if (value == Gender.Zwitter)
+                    throw new Exception("Bei einem Menschen können wir nur Frau oder Mann zuweisen");
+
+                base.Gender = value;
+            }
         }
     }
 

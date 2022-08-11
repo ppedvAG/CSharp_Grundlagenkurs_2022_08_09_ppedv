@@ -190,7 +190,9 @@ namespace Fahrzeugpark
 
 
             SimulateVehicles();
-            GC.Collect();
+            GC.Collect(); //Können wir die Variablen expliziet in SimulationVehicle vorab bereinigen -> sont 
+
+            Console.WriteLine("-Weiteres Beispiel mit Dekonstrukto");
             #region Lab 08: Vererbung
 
             //Instanziierung verschiedener Fahrzeuge
@@ -220,5 +222,15 @@ namespace Fahrzeugpark
 
         }//Variablen gelten nur in Methode 'SimulateVehicles' und werden nach dem verlassen der Methode bereinigt. 
 
+
+        public static PKW  SimulateVehicles1()
+        {
+            //Instanziierung verschiedener Fahrzeuge
+            PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
+            Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+            Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
+            return pkw1;
+
+        }//Variablen gelten nur in Methode 'SimulateVehicles' und werden nach dem verlassen der Methode bereinigt. 
     }
 }
