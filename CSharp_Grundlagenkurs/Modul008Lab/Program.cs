@@ -1,4 +1,10 @@
-﻿namespace Momdul007Lab
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fahrzeugpark
 {
     public class Fahrzeug
     {
@@ -22,7 +28,7 @@
         }
 
         //Methode zur Ausgabe von Objektinformationen
-        public string Info()
+        public virtual string Info()
         {
             if (this.MotorLäuft)
                 return $"{this.Name} kostet {this.Preis}€ und fährt momentan mit {this.AktGeschwindigkeit} von maximal {this.MaxGeschwindigkeit}km/h.";
@@ -100,6 +106,78 @@
         }
 
         #endregion
+
+
+        
+
+    }
+
+    //Schiff erbt von der Fahrzeug-Klasse und übernimmt deren Member
+    public class Schiff : Fahrzeug
+    {
+        //Klasseneigener Enum
+        public enum SchiffsTreibstoff { Diesel = 0, Dampf, Wind, Muskelkraft }
+
+        //Klasseneigene Property
+        public SchiffsTreibstoff Treibstoff { get; set; }
+
+        //Konstruktor mit Bezug auf den Konstruktor der Mutterklasse (base)
+        public Schiff(string name, int maxG, double preis, SchiffsTreibstoff treibstoff) : base(name, maxG, preis)
+        {
+            this.Treibstoff = treibstoff;
+        }
+
+        //Überxchreibung der Info()-Methode mit Bezug auf die Methode der Mutterklasse (base)
+        public override string Info()
+        {
+            return "Das Schiff " + base.Info() + $" Es fährt mit {this.Treibstoff}.";
+        }
+
+        ~Schiff()
+        {
+            Console.WriteLine("Schiff wird versenkt");
+        }
+    }
+
+    //vgl. Schiff
+    public class PKW : Fahrzeug
+    {
+        public int AnzahlTueren { get; set; }
+
+        public PKW(string name, int maxG, double preis, int anzTueren) : base(name, maxG, preis)
+        {
+            this.AnzahlTueren = anzTueren;
+        }
+
+        public override string Info()
+        {
+            return "Der PKW " + base.Info() + $" Er hat {this.AnzahlTueren} Türen.";
+        }
+
+        ~PKW()
+        {
+            Console.WriteLine("Aufo wird verschrottet");
+        }
+    }
+
+    //vgl. Schiff
+    public class Flugzeug : Fahrzeug
+    {
+        public int MaxFlughöhe { get; set; }
+
+        public Flugzeug(string name, int maxG, double preis, int maxFH) : base(name, maxG, preis)
+        {
+            this.MaxFlughöhe = maxFH;
+        }
+
+        public override string Info()
+        {
+            return "Das Flugzeug " + base.Info() + $" Es kann bis auf {this.MaxFlughöhe}m aufsteigen.";
+        }
+        ~Flugzeug()
+        {
+            Console.WriteLine("Flugzeug wird verschrottet");
+        }
     }
 
     class Program
@@ -107,47 +185,40 @@
         static void Main(string[] args)
         {
             //Ändern des durch Console verwendeten Zeichensatzes auf Unicode (damit das €-Zeichen angezeigt werden kann)
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            #region Lab 06: Fahrzeug-Klasse
-            //Deklaration einer Fahrzeug-Variablen und Initialisierung mittels einer Fahrzeug-Instanz
-            Fahrzeug fz1 = new Fahrzeug("Mercedes", 190, 23000);
-            //Ausführen der Info()-Methode des Fahrzeugs und Ausgabe in der Konsole
-            Console.WriteLine(fz1.Info() + "\n");
 
-            //Diverse Methodenausführungen
-            fz1.StarteMotor();
-            fz1.Beschleunige(120);
-            Console.WriteLine(fz1.Info() + "\n");
 
-            fz1.Beschleunige(300);
-            Console.WriteLine(fz1.Info() + "\n");
+            SimulateVehicles();
+            GC.Collect();
+            #region Lab 08: Vererbung
 
-            fz1.StoppeMotor();
-            Console.WriteLine(fz1.Info() + "\n");
+            //Instanziierung verschiedener Fahrzeuge
+            PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
+            Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+            Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
 
-            fz1.Beschleunige(-500);
-            fz1.StoppeMotor();
-            Console.WriteLine(fz1.Info() + "\n");
+            //Ausgabe der verschiedenen Info()-Methoden
+            Console.WriteLine(pkw1.Info());
+            Console.WriteLine(schiff1.Info());
+            Console.WriteLine(flugzeug1.Info());
+
+
+
+
             #endregion
 
+        } //GC wird erst beim Verlassen dieser Methode aufgerufen -> da es die Main-Methode ist, bekommen wir hier keine Ausgabe 
 
-            //Generierung von div. Objekten (zur Überschwemmung des RAM)
-            Fahrzeug fz2 = new Fahrzeug("BMW", 230, 25999.99);
-            
-            for (int i = 0; i < 1000; i++)
-            {
-                fz1 = new Fahrzeug("BMW", 230, 25999.99);
-            }
+        public static void SimulateVehicles()
+        {
+            //Instanziierung verschiedener Fahrzeuge
+            PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
+            Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+            Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
 
-            //Bsp-Aufruf der GarbageCollection
-            GC.Collect();
-            //Abwarten der Finalizer-Ausführungen (der Objekte)
-            GC.WaitForPendingFinalizers();
 
-            //Aufruf der statischen Methode
-            Console.WriteLine(Fahrzeug.ZeigeAnzahlFahrzeuge());
+        }//Variablen gelten nur in Methode 'SimulateVehicles' und werden nach dem verlassen der Methode bereinigt. 
 
-        }
     }
 }

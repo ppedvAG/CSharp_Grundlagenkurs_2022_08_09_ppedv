@@ -5,27 +5,27 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul002_Variablen Datentypen und Konventierung", "Modul002_Variablen Datentypen und Konventierung", "{788A6DE6-8ED6-4847-BC74-D87B35FB3F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul002Demo", "Modul002Demo\Modul002Demo.csproj", "{65B95689-40BC-440E-A8EC-23178EC1029F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul002Demo", "Modul002Demo\Modul002Demo.csproj", "{65B95689-40BC-440E-A8EC-23178EC1029F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul003_Arrays und Bedingungen", "Modul003_Arrays und Bedingungen", "{63078869-BDCE-4E0E-B259-FAAC5B30EFED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul003Demo", "Modul003Demo\Modul003Demo.csproj", "{25BBBFF2-5AD0-4C6C-BAEA-822604664C77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul003Demo", "Modul003Demo\Modul003Demo.csproj", "{25BBBFF2-5AD0-4C6C-BAEA-822604664C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul003LAB", "Modul003LAB\Modul003LAB.csproj", "{269B5DF5-F6DC-455F-B6FF-5537EEE936A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul003LAB", "Modul003LAB\Modul003LAB.csproj", "{269B5DF5-F6DC-455F-B6FF-5537EEE936A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul004_Schleifen und Enums", "Modul004_Schleifen und Enums", "{CC5A7A39-5620-4BDE-AFBF-47F8B1D7938E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul004Demo", "Modul004Demo\Modul004Demo.csproj", "{51AA97DC-0C66-4D37-8BE0-080CA679786F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul004Demo", "Modul004Demo\Modul004Demo.csproj", "{51AA97DC-0C66-4D37-8BE0-080CA679786F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul004Lab", "Modul004Lab\Modul004Lab.csproj", "{171BED57-7539-4D5B-BD02-DB242D21AFDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul004Lab", "Modul004Lab\Modul004Lab.csproj", "{171BED57-7539-4D5B-BD02-DB242D21AFDE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul005_Funktionen", "Modul005_Funktionen", "{5DB4853B-F589-40CB-9DC3-41CE269B8BBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul005Demo", "Modul005Demo\Modul005Demo.csproj", "{029AFCFE-E291-44CE-AA74-740C68CAD4E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul005Demo", "Modul005Demo\Modul005Demo.csproj", "{029AFCFE-E291-44CE-AA74-740C68CAD4E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WiederholungTag1", "WiederholungTag1", "{D42C6C81-0BBB-4644-AD04-9D4407AD6769}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiederholungTag1", "WiederholungTag1\WiederholungTag1.csproj", "{656CD27E-551F-41DA-91E1-C50D1793B4FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiederholungTag1", "WiederholungTag1\WiederholungTag1.csproj", "{656CD27E-551F-41DA-91E1-C50D1793B4FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80F9A31A-2C88-4C4F-9A72-65A4C782BF50}"
 	ProjectSection(SolutionItems) = preProject
@@ -35,21 +35,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul006_Namespaces_Klassen_Felder_Eigenschaften", "Modul006_Namespaces_Klassen_Felder_Eigenschaften", "{88796213-220A-45B2-87BB-EC3CE5BCC047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul006Demo_NamespaceSample", "Modul006Demo_NamespaceSample\Modul006Demo_NamespaceSample.csproj", "{06939FA7-20C8-4706-BBED-13A0E1502CD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul006Demo_NamespaceSample", "Modul006Demo_NamespaceSample\Modul006Demo_NamespaceSample.csproj", "{06939FA7-20C8-4706-BBED-13A0E1502CD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul006Demo", "Modul006Demo\Modul006Demo.csproj", "{023D9E5C-EDB3-44D1-BF30-0A8293709E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul006Demo", "Modul006Demo\Modul006Demo.csproj", "{023D9E5C-EDB3-44D1-BF30-0A8293709E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul006Lab", "Modul006Lab\Modul006Lab.csproj", "{7C7344A3-7FB1-4B3B-94A6-0344582D8E12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul006Lab", "Modul006Lab\Modul006Lab.csproj", "{7C7344A3-7FB1-4B3B-94A6-0344582D8E12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul007_statischeMethoden_Referenzen", "Modul007_statischeMethoden_Referenzen", "{CD748A27-BBC7-4F50-A532-C5A8F2B5D4DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul007Demo", "Modul007Demo\Modul007Demo.csproj", "{C729E0F4-4EDA-4FED-852C-63727688D67B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul007Demo", "Modul007Demo\Modul007Demo.csproj", "{C729E0F4-4EDA-4FED-852C-63727688D67B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul008_Vererbung", "Modul008_Vererbung", "{B97F47F3-526C-4674-8B52-DB410D64BCE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul008Demo", "Modul008Demo\Modul008Demo.csproj", "{0F18E0E6-D4A3-4B85-B41F-61EB662EF480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul008Demo", "Modul008Demo\Modul008Demo.csproj", "{0F18E0E6-D4A3-4B85-B41F-61EB662EF480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momdul007Lab", "Momdul007Lab\Momdul007Lab.csproj", "{748F1E25-DC34-4CC4-B325-4DDD6768AB6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momdul007Lab", "Momdul007Lab\Momdul007Lab.csproj", "{748F1E25-DC34-4CC4-B325-4DDD6768AB6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul008Lab", "Modul008Lab\Modul008Lab.csproj", "{EB41C489-56D0-45FC-B55A-80AD82840213}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{748F1E25-DC34-4CC4-B325-4DDD6768AB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{748F1E25-DC34-4CC4-B325-4DDD6768AB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{748F1E25-DC34-4CC4-B325-4DDD6768AB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB41C489-56D0-45FC-B55A-80AD82840213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB41C489-56D0-45FC-B55A-80AD82840213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB41C489-56D0-45FC-B55A-80AD82840213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB41C489-56D0-45FC-B55A-80AD82840213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{C729E0F4-4EDA-4FED-852C-63727688D67B} = {CD748A27-BBC7-4F50-A532-C5A8F2B5D4DC}
 		{0F18E0E6-D4A3-4B85-B41F-61EB662EF480} = {B97F47F3-526C-4674-8B52-DB410D64BCE8}
 		{748F1E25-DC34-4CC4-B325-4DDD6768AB6C} = {CD748A27-BBC7-4F50-A532-C5A8F2B5D4DC}
+		{EB41C489-56D0-45FC-B55A-80AD82840213} = {B97F47F3-526C-4674-8B52-DB410D64BCE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1A4CC0B-0B82-4EC1-9002-150208E36A82}

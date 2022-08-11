@@ -4,18 +4,33 @@
     {
         static void Main(string[] args)
         {
+            #region Vererbung  Sample 1 - Einfache Vererbung
             Mensch mensch = new Mensch(DateTime.Now, "Homosapiens", 80, "europäisch", UmweltTyp.Land, Gender.Männlich, "Max", "Muster", "Frankfurt", null);
-
             Mensch mensch1 = new Mensch(DateTime.Now, "Homosapiens", 80, "europäisch", UmweltTyp.Land, Gender.Männlich, "Max", "Muster", "Frankfurt", null);
             Mensch mensch2 = new Mensch(DateTime.Now, "Homosapiens", 80, "europäisch", UmweltTyp.Land, Gender.Männlich, "Max", "Muster", "Frankfurt", null);
             Mensch mensch3 = new Mensch(DateTime.Now, "Homosapiens", 80, "europäisch", UmweltTyp.Land, Gender.Männlich, "Max", "Muster", "Frankfurt", null);
             
             Lebewesen lebewesen1 = new Lebewesen(DateTime.Now, "Amsel", 1, "schwarz", UmweltTyp.Luft, Gender.Männlich);
-
             Lebewesen lebewesen2 = new Lebewesen(DateTime.Now, "Ameise", 0.1, "schwarz", UmweltTyp.Land, Gender.Weiblich);
 
             Console.WriteLine(Mensch.ZeigeAnzahlLebewesen());
             Console.WriteLine(Mensch.ZeigeAnzahlMenschen());
+            #endregion
+
+            #region Vererbung mit sealed unterbinden
+            MySqlConnectionClass mySqlConnectionClass = new ();
+            MySqlConnectionClass mySqlConnectionClass2 = new MySqlConnectionClass();
+            #endregion
+
+
+            #region virtual - Methoden
+            Console.WriteLine("--- override ToString für Lebewesen ---");
+            Console.WriteLine(lebewesen1.ToString());
+            Console.WriteLine();
+            Console.WriteLine("--- override ToString für Mensch ---");
+            Console.WriteLine("---- Klasse Mensch findet in seiner Klasse keine ToString() und schaut eine Klasse höher, ob es eine ToString() gibt");
+            Console.WriteLine(mensch.ToString());
+            #endregion
         }
     }
 
@@ -25,6 +40,7 @@
 
     public enum Gender { Männlich, Weiblich, Zwitter }
 
+    
     public class Lebewesen
     {
         #region Properties
@@ -147,6 +163,21 @@
         public static void WeitereStatischeMethode()
            => Console.WriteLine("Hallo");
         #endregion
+
+        #region Vererbung -> Virtual / Override
+        //Mit  public sealed override string ToString() kann man ToString() deaktiviert nach unten das Keyword override 
+        public override string ToString()
+        {
+            //Use Case: Können die Basis-Implementierung von base.ToString() weiterhin verwenden und mit der neuen Implementierung kombinieren
+            //string getTypeStr = base.ToString();
+
+            return $"{base.ToString()} beinhaltet folgende Variablen\nName:\t\t{Name}\nGeburtstag\t{Geburtsdatum}\nGewicht:\t{Gewicht}\n";
+        }
+        public virtual void Kommunizieren()
+        {
+            Console.WriteLine("Lebewesen kommuniziert");
+        }
+        #endregion
     }
 
     public class Mensch : Lebewesen
@@ -206,5 +237,34 @@
             return $"Es gibt {AnzahlMenschen} Menschen";
 
         }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}\nVorname:\t{Firstname}\nNachname:\t{Lastname}";
+        }
+
+        public override void Kommunizieren()
+        {
+            Console.WriteLine("Mensch kommuniziert über Sprache");
+        }
     }
+
+
+
+    #region Mit dem Schlüsselwort sealed können wir nicht von MySqlConnectionClass vererben
+    public sealed class MySqlConnectionClass
+    {
+        public int Timeout { get; set; } = 1800; //Timeout in Sekunden
+
+        public void OpenConnection(string username, string passwort)
+        {
+            //Öffne Db
+        }
+    }
+    #endregion
+
+
+
+
+
 }
