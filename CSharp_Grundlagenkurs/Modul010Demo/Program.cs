@@ -109,7 +109,6 @@ namespace Modul010Demo
 
             #endregion
 
-
             #region 2.) Wichtige Interfaces aus der .NET Welt
 
             #region 2.1) IDispose - Interface

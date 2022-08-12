@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Modul010Lab
 {
-    internal class IBeladbar
+    interface IBeladbar
     {
+        Fahrzeug Ladung { get; set; }
+
+        void Belade(Fahrzeug fz);
+
+        Fahrzeug Entlade();
     }
 }
