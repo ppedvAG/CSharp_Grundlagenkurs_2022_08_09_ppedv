@@ -1,0 +1,12 @@
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\bin\Debug\net6.0\CalculationLibrary.deps.json
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\bin\Debug\net6.0\CalculationLibrary.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\bin\Debug\net6.0\CalculationLibrary.pdb
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.csproj.AssemblyReference.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.AssemblyInfo.cs
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\refint\CalculationLibrary.dll
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\CalculationLibrary.pdb
+C:\Aktueller Kurs\CSharp_Grundlagenkurs_KW32_ppedv\CSharp_Grundlagenkurs\CalculationLibrary\obj\Debug\net6.0\ref\CalculationLibrary.dll
