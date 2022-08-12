@@ -107,26 +107,63 @@
             #region Lab 10: Interfaces
 
             //Instanziierung von Bsp-Objekten
-            PKW pkw1 = new PKW("BMW", 250, 23000, 5);
-            Flugzeug flugzeug1 = new Flugzeug("Boing", 750, 3000000, 9990);
-            Schiff schiff1 = new Schiff("Titanic", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf);
+            //PKW pkw1 = new PKW("BMW", 250, 23000, 5);
+            //Flugzeug flugzeug1 = new Flugzeug("Boing", 750, 3000000, 9990);
+            //Schiff schiff1 = new Schiff("Titanic", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf);
 
-            //Aufruf der Belade()-Funktion mit verschiedenen Fahrzeugen
-            BeladeFahrzeuge(pkw1, flugzeug1);
-            BeladeFahrzeuge(flugzeug1, schiff1);
-            BeladeFahrzeuge(schiff1, pkw1);
+            ////Aufruf der Belade()-Funktion mit verschiedenen Fahrzeugen
+            //BeladeFahrzeuge(pkw1, flugzeug1);
+            //BeladeFahrzeuge(flugzeug1, schiff1);
+            //BeladeFahrzeuge(schiff1, pkw1);
 
-            //Ausgabe der Info() des Schiffes
-            Console.WriteLine("\n" + schiff1.Info());
+            ////Ausgabe der Info() des Schiffes
+            //Console.WriteLine("\n" + schiff1.Info());
 
-            //Aufruf der Entlade()-Methode
-            schiff1.Entlade();
+            ////Aufruf der Entlade()-Methode
+            //schiff1.Entlade();
 
             #endregion
 
 
+            Stack<Fahrzeug> stackFahrzeuge = new Stack<Fahrzeug>();
+            Queue<Fahrzeug> queueFahrzeuge = new Queue<Fahrzeug>();
+
+            //Fahrzeuge werden in Stack und Queue generiert
+            for (int i = 0; i < 10; i++)
+            {
+                stackFahrzeuge.Push(Fahrzeug.GeneriereFahrzeug($"S_{i}"));
+                queueFahrzeuge.Enqueue(Fahrzeug.GeneriereFahrzeug($"Q_{i}"));
+            }
+
+            Dictionary<Fahrzeug, Fahrzeug> fahrzeugDictionary = new Dictionary<Fahrzeug, Fahrzeug>();
+            for (int i = 0; i < queueFahrzeuge.Count; i++)
+            {
+                Fahrzeug stackFahrzeug = stackFahrzeuge.Pop();
+                Fahrzeug queueFahrzeug = queueFahrzeuge.Dequeue();
+
+                if (queueFahrzeug is IBeladbar beladbaresFahrzeug)
+                {
+                    beladbaresFahrzeug.Belade(stackFahrzeug);
+                    fahrzeugDictionary.Add(queueFahrzeug, stackFahrzeug);
+                }
+            }
 
             
+            
+            foreach (KeyValuePair<Fahrzeug, Fahrzeug> aktuellerEintrag in fahrzeugDictionary)
+            {
+                if (aktuellerEintrag.Key is IBeladbar beladbaresFahrzeug)
+                {
+                    if (aktuellerEintrag.Value is PKW)
+                        Console.WriteLine($"PKW {aktuellerEintrag.Value.Name} ist in {aktuellerEintrag.Key.Name} beladen");
+                    else if (aktuellerEintrag.Value is Schiff)
+                        Console.WriteLine($"Schiff {aktuellerEintrag.Value.Name} ist in {aktuellerEintrag.Key.Name} beladen");
+                    else
+                        Console.WriteLine($"Flugzeug {aktuellerEintrag.Value.Name} ist in {aktuellerEintrag.Key.Name} beladen");
+                }
+            }
+
+
         }
 
         #region Lab 10: Interfaces (Methode)

@@ -47,8 +47,37 @@ namespace Modul011Demo
             hashtable.Add(new DateTime(), "1");
             hashtable.Add(12, 22);
 
-            
+            #region Stack
+            Stack<string> stack = new Stack<string>();
 
+            //Ist wie ein Kartenstapel
+
+            //erste Karte wird hingelegt
+            stack.Push("Erster Karte");
+
+            //zweite Karte wird obendrauf gelegt 
+            stack.Push("zweite Karte");
+
+            //dritte Karte wird obendrauf gelegt 
+            stack.Push("dritte Karte");
+
+            //oberste Karte wird vom Stapel heruntergenommen -> dritte Karte
+            string currentKarte = stack.Pop();
+            #endregion
+
+
+            #region Queue 
+            Queue<string> warteZimmer = new Queue<string>();
+
+            warteZimmer.Enqueue("Patient 1");
+            warteZimmer.Enqueue("Patient 2");
+            warteZimmer.Enqueue("Patient 3");
+            warteZimmer.Enqueue("Patient 4");
+
+            //Patient 1 -> ältester Eintrag 
+            string patientIstAnDerReihe = warteZimmer.Dequeue(); //wird auch vom Stapel entfernt 
+
+            #endregion
         }
     }
 }
